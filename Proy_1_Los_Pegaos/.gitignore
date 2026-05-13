@@ -1,0 +1,26 @@
+# ==============================================================================
+# MISIÓN ARTEMIS - ARCHIVO DE EXCLUSIÓN GIT (.gitignore)
+# ==============================================================================
+# Evita subir archivos generados en ejecución, caché o basura del sistema.
+
+# --- Reportes de Telemetría (Privacidad y Limpieza) ---
+# No queremos subir los informes de hardware generados por las VM de los compañeros.
+reportes_recibidos/
+reportes_recibidos/*
+reporte_*.txt
+
+# --- Caché y Bytecode de Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Archivos Temporales y Swaps de Editores ---
+*.swp
+*.swo
+*~
+\#*\#
+.#*
+
+# --- Archivos del Sistema Operativo ---
+.DS_Store
+Thumbs.db
