@@ -486,7 +486,7 @@ class GroundControlHandler(SimpleHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-type', 'text/plain; charset=utf-8')
             self.end_headers()
-            with open('sergio 2/mision_final.sh', 'rb') as f:
+            with open('mision_final.sh', 'rb') as f:
                 self.wfile.write(f.read())
 
         # Enrutado para las llamadas internas del orquestador
@@ -494,7 +494,7 @@ class GroundControlHandler(SimpleHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            with open('sergio 2/nivel1_saludo.sh', 'rb') as f:
+            with open('nivel1_saludo.sh', 'rb') as f:
                 self.wfile.write(f.read())
 
         # (Repetir el mismo bloque condicional para /nivel2, /nivel3 y /nivel4...)
